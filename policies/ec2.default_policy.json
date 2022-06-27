@@ -1,0 +1,24 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DefaultEC2",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:CreateTags",
+        "ec2:DescribeTags",
+        "ec2:DescribeVolumes",
+        "ec2:DescribeInstances",
+        "events:PutEvents",
+        "ecs:DescribeClusters",
+        "ecs:DescribeServices",
+        "ecs:DescribeTasks",
+        "ecs:ListContainerInstances",
+        "ecs:ListTasks",
+        "ecs:StopTask",
+        "sts:GetCallerIdentity"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
